@@ -35,6 +35,10 @@ class Instructor extends Person{
     grade(student, subject){
         return `${student.name} receives a perfect score on ${subject}`;
     }
+
+    fickleGrading(student, max){
+        return (Math.floor(Math.random() * Math.floor(max))) + student.grade;
+    }
 }
 
 // Student is child of Person
@@ -235,3 +239,8 @@ console.log(pMThree.standUp(`Helms Deep Defenders`));
 
 console.log(pMTwo.debugsCode(studentThree, `brandywine`));
 console.log(pMThree.debugsCode(studentTwo, `dwarvish cuisine`));
+
+// fickleGrading method test
+
+console.log(pMTwo.fickleGrading(studentThree, 10));
+console.log(instructorOne.fickleGrading(studentTwo, 20));
