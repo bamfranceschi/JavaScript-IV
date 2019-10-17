@@ -48,6 +48,7 @@ class Student extends Person{
         this.previousBackground = studentAttr.previousBackground;
         this.className = studentAttr.className;
         this.favSubjects = studentAttr.favSubjects;
+        this.grade = studentAttr.grade;
     }
 
     listsSubjects(){
@@ -138,7 +139,8 @@ const studentOne = new Student({
     location: 'The Shire',
     previousBackground: 'Shire aristocracy',
     className: 'The Hobbits',
-    favSubjects: ['rings', 'brandywine', 'elvishArmor', 'Sting']
+    favSubjects: ['rings', 'brandywine', 'elvishArmor', 'Sting'],
+    grade: 92
 })
 
 const studentTwo = new Student({
@@ -147,7 +149,8 @@ const studentTwo = new Student({
     location: 'The Shire',
     previousBackground: 'gardening',
     className: 'The Gaffers',
-    favSubjects: ['cooking', 'gardening', 'potatoes', 'poetry', 'Elves']
+    favSubjects: ['cooking', 'gardening', 'potatoes', 'poetry', 'Elves'],
+    grade: 100
 })
 
 const studentThree = new Student({
@@ -156,7 +159,8 @@ const studentThree = new Student({
     location: 'The Shire',
     previousBackground: 'Master of Buckland',
     className: 'The Ent Homies',
-    favSubjects: ['breakfast', 'secondBreakfast', 'elevensies', 'ents']
+    favSubjects: ['breakfast', 'secondBreakfast', 'elevensies', 'ents'],
+    grade: 68
 })
 
 // New Objects - ProjectManagers
