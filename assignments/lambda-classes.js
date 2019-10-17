@@ -66,6 +66,14 @@ class Student extends Person{
     sprintChallenge(subject){
         return `${this.name} has begun sprint challenge on ${subject}`;
     }
+
+    checkIfGraduate(){
+        if(this.grade > 70){
+            return `You can graduate!`;
+        } else {
+            return `Sorry, you're not ready to graduate yet.`;
+        }
+    }
 }
 
 // Project Manager is child of Instructor
@@ -244,3 +252,8 @@ console.log(pMThree.debugsCode(studentTwo, `dwarvish cuisine`));
 
 console.log(pMTwo.fickleGrading(studentThree, 10));
 console.log(instructorOne.fickleGrading(studentTwo, 20));
+
+// checkIfGraduate method test
+
+console.log(studentTwo.checkIfGraduate());
+console.log(studentThree.checkIfGraduate());
